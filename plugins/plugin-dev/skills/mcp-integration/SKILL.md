@@ -474,6 +474,12 @@ Look for:
 - Check token scopes and permissions
 - Verify environment variables set
 
+**400 error on session start:**
+- Check for invalid property keys in tool input schemas
+- Property keys must not contain spaces or special characters
+- See `references/troubleshooting-schema-errors.md` for detailed diagnosis
+- Common issue with Twilio and other third-party MCP servers
+
 ## Quick Reference
 
 ### MCP Server Types
@@ -521,6 +527,7 @@ For detailed information, consult:
 - **`references/server-types.md`** - Deep dive on each server type
 - **`references/authentication.md`** - Authentication patterns and OAuth
 - **`references/tool-usage.md`** - Using MCP tools in commands and agents
+- **`references/troubleshooting-schema-errors.md`** - Diagnosing and fixing invalid property keys in tool schemas
 
 ### Example Configurations
 

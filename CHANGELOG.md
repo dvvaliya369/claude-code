@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Added troubleshooting documentation for MCP tool schema validation errors (invalid property keys causing 400 errors on session start)
+
 ## 2.1.37
 
 - Fixed an issue where /fast was not immediately available after enabling /extra-usage
