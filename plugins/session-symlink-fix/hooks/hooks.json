@@ -1,0 +1,13 @@
+{
+  "SessionStart": [
+    {
+      "matcher": "*",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "python3 ${CLAUDE_PLUGIN_ROOT}/hooks/resolve_canonical_path.py"
+        }
+      ]
+    }
+  ]
+}

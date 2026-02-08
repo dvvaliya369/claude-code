@@ -1,0 +1,7 @@
+{
+  "name": "session-symlink-fix",
+  "version": "1.0.0",
+  "description": "Fixes session resume when working directory is accessed via symlink or junction point by resolving paths to their canonical form",
+  "author": "Claude Code Team",
+  "hooks": "hooks/hooks.json"
+}
