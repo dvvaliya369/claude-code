@@ -3,6 +3,7 @@
 ## 2.1.37
 
 - Fixed an issue where /fast was not immediately available after enabling /extra-usage
+- Fixed session resume failures when the working directory is accessed via a symlink or Windows junction point by resolving paths to their canonical form before comparison
 
 ## 2.1.36
 
