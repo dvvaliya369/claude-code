@@ -1,0 +1,58 @@
+{
+  "tools": [
+    {
+      "name": "twilio_send_sms",
+      "description": "Send an SMS message using Twilio",
+      "inputSchema": {
+        "name": "twilio_send_sms_input",
+        "description": "Parameters for sending SMS",
+        "type": "object",
+        "properties": {
+          "to": {
+            "type": "string",
+            "description": "Recipient phone number in E.164 format (e.g., +1234567890)"
+          },
+          "from": {
+            "type": "string",
+            "description": "Twilio phone number to send from in E.164 format"
+          },
+          "body": {
+            "type": "string",
+            "description": "The text content of the SMS message"
+          },
+          "mediaUrl": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "URLs of media to send with the message (MMS)"
+          }
+        },
+        "required": ["to", "from", "body"]
+      }
+    },
+    {
+      "name": "twilio_make_call",
+      "description": "Make a phone call using Twilio",
+      "inputSchema": {
+        "name": "twilio_make_call_input",
+        "type": "object",
+        "properties": {
+          "to": {
+            "type": "string",
+            "description": "Phone number to call"
+          },
+          "from": {
+            "type": "string",
+            "description": "Twilio phone number to call from"
+          },
+          "url": {
+            "type": "string",
+            "description": "TwiML URL for call instructions"
+          }
+        },
+        "required": ["to", "from", "url"]
+      }
+    }
+  ]
+}

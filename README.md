@@ -49,6 +49,15 @@ For more installation options, uninstall steps, and troubleshooting, see the [se
 
 This repository includes several Claude Code plugins that extend functionality with custom commands and agents. See the [plugins directory](./plugins/README.md) for detailed documentation on available plugins.
 
+## MCP Integration Troubleshooting
+
+If you're experiencing 400 errors when starting Claude with MCP integrations (like Twilio), see our [MCP Schema Troubleshooting Guide](./docs/mcp-schema-troubleshooting.md) for diagnosis and fixes.
+
+**Quick validation:**
+```bash
+npx tsx scripts/validate-mcp-tool-schema.ts path/to/your/tools.json
+```
+
 ## Reporting Bugs
 
 We welcome your feedback. Use the `/bug` command to report issues directly within Claude Code, or file a [GitHub issue](https://github.com/anthropics/claude-code/issues).
